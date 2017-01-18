@@ -2,14 +2,14 @@ import React from 'react';
 import NavbarItem from './NavbarItem';
 import '../stylesheets/Navbar.css';
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div className='navbar'>
       <NavbarItem justifyContent='flex-start'>
-        Searchsdfsfsdfsdasdfakjlsdfhkljasdhjlkdf
+        Search
       </NavbarItem>
       <NavbarItem justifyContent='center' textAlign='center'>
-        Recipe Book
+        {props.title}
       </NavbarItem>
       <NavbarItem justifyContent='flex-end' textAlign='right'>
         User
